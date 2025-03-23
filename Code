@@ -1,0 +1,45 @@
+#include <Servo.h>
+ #define M1 5
+ #define M2 6
+ #define M3 10
+ #define M4 11
+ Servo myservo1;
+ void setup() {
+ // put your setup code here, to run once:
+ myservo1.attach(9);
+ myservo1.write(0);
+ pinMode(M1,OUTPUT);
+ pinMode(M2,OUTPUT); 
+pinMode(M3,OUTPUT);
+ pinMode(M4,OUTPUT);
+ }
+ void loop() 
+{
+ myservo1.write(40);
+ delay(1000);
+digitalWrite(M1,HIGH);
+ digitalWrite(M2,LOW);
+ digitalWrite(M3,HIGH);
+ digitalWrite(M4,LOW);
+ delay(5000);
+ digitalWrite(M1,LOW);
+ digitalWrite(M2,HIGH);
+ digitalWrite(M3,HIGH);
+ digitalWrite(M4,LOW);
+ delay(2000);
+ digitalWrite(M1,LOW);
+ digitalWrite(M2,HIGH);
+ digitalWrite(M3,HIGH);
+ digitalWrite(M4,LOW);
+ delay(2000);
+ digitalWrite(M1,HIGH);
+ digitalWrite(M2,LOW);
+ digitalWrite(M3,HIGH);
+ digitalWrite(M4,LOW);
+ delay(5000);
+digitalWrite(M1,LOW);
+ digitalWrite(M2,LOW);
+ digitalWrite(M3,LOW);
+ digitalWrite(M4,LOW);
+ delay(5000);
+ }
